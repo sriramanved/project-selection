@@ -1,13 +1,13 @@
 README for CS 4820 Spring 2023 Programming Assignment
 
 ## Maximum Total Score Cut in a Flow Network
-This program solves a variation of the minimum cut problem in a flow network where each vertex in the network has an associated score. Given a flow network $G = (V, E)$, where each vertex $v \in V$ is assigned a score $r_v$, the goal is to find a minimum capacity cut (A, B) such that the total score in A, 􏰂v∈A ru, is maximized.
+This program solves a variation of the minimum cut problem in a flow network where each vertex in the network has an associated score. Given a flow network $G = (V, E)$, where each vertex $v \in V$ is assigned a score $r_v$, the goal is to find a minimum capacity cut $(A, B)$ such that the total score in A, or the summation of all nodes in A, is maximized.
 
 The input format is as follows:
 
-The first line contains two positive integers n,m (separated by a space), which represents the number of nodes and edges in G respectively. The nodes are labeled by numbers 1, . . . , n. In addition, 1 is the source, and n is the sink.
-The second line contains n integers r1, r2, . . . , rn, where each ri is the score assigned to node i.
-The following m lines are the m edges in G. Each of the m lines contains three integers uj,vj,cj (separated by spaces), which represents an edge from uj to vj with capacity cj.
+- The first line contains two positive integers n, m (separated by a space), which represents the number of nodes and edges in G respectively. The nodes are labeled by numbers 1, . . . , $n$. In addition, 1 is the source, and n is the sink.
+- The second line contains n integers $r_1$, $r_2$, . . . , $r_n$, where each $r_i$ is the score assigned to node $i$.
+- The following m lines are the $m$ edges in G. Each of the m lines contains three integers uj,vj,cj (separated by spaces), which represents an edge from uj to vj with capacity cj.
 The output of the program is the maximum total score 􏰂v∈A ru (instead of the cut (A, B)).
 
 Data Structures and Algorithms
