@@ -7,7 +7,7 @@ The input format is as follows:
 
 - The first line contains two positive integers n, m (separated by a space), which represents the number of nodes and edges in G respectively. The nodes are labeled by numbers 1, . . . , $n$. In addition, 1 is the source, and n is the sink.
 - The second line contains n integers $r_1$, $r_2$, . . . , $r_n$, where each $r_i$ is the score assigned to node $i$.
-- The following m lines are the $m$ edges in G. Each of the m lines contains three integers uj,vj,cj (separated by spaces), which represents an edge from $u_j$ to $v_j$ with capacity $c_j$.
+- The following $m$ lines are the $m$ edges in $G$. Each of the $m$ lines contains three integers $u_j,v_j,c_j$ (separated by spaces), which represents an edge from $u_j$ to $v_j$ with capacity $c_j$.
 The output of the program is the maximum total score $\sum_{v \in A} r_u$ (instead of the cut $(A, B)$).
 
 ## Data Structures and Algorithms
