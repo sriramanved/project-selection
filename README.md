@@ -17,7 +17,7 @@ To keep track of the flow in the network and to find the minimum cut, the progra
 
 To find the minimum cut in the residual graph, the program uses the depth-first search (DFS) algorithm to traverse the graph from the source and mark all the reachable vertices. The vertices that are not marked form one part of the minimum cut, and the vertices that are marked form the other part.
 
-To maximize the total score in the minimum cut, the program sorts the vertices in the minimum cut by their scores and adds up the scores of the vertices in the larger part of the cut.
+To maximize the total score in the minimum cut, we sort the vertices in the minimum cut by their scores and adds up the scores of the vertices in the larger part of the cut.
 
 ## Takeaways
 This assignment explores implementations of network flow algorithms and graph traversal algorithms. These concepts are essential for solving many real-world problems in fields such as operations research, computer networking, and machine learning.
