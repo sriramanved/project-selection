@@ -19,7 +19,5 @@ To find the minimum cut in the residual graph, the program uses the depth-first 
 
 To maximize the total score in the minimum cut, the program sorts the vertices in the minimum cut by their scores and adds up the scores of the vertices in the larger part of the cut.
 
-## Relevant for Software Engineering
-This program demonstrates proficiency in several important concepts in data structures and algorithms, such as graph theory, network flow algorithms, and graph traversal algorithms. These concepts are essential for solving many real-world problems in fields such as operations research, computer networking, and machine learning.
-
-By implementing this program in Python and uploading it to a Github repository, recruiters can assess the candidate's ability to write efficient, readable, and well-documented code using a popular programming language and version control system. The program's README also demonstrates the candidate's ability to communicate technical details to a non-technical audience, which is a valuable skill in software engineering.
+## Takeaways
+This assignment explores implementations of network flow algorithms and graph traversal algorithms. These concepts are essential for solving many real-world problems in fields such as operations research, computer networking, and machine learning.
