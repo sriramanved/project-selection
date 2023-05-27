@@ -1,6 +1,6 @@
 README for CS 4820 Spring 2023 Programming Assignment
 
-## Maximum Total Score Cut in a Flow Network
+## Maximum Total Score Cut in a Flow Network via Project Selection
 This program solves a variation of the minimum cut problem in a flow network where each vertex in the network has an associated score. Given a flow network $G = (V, E)$, where each vertex $v \in V$ is assigned a score $r_v$, the goal is to find a minimum capacity cut $(A, B)$ such that the total score in $A$, or the summation of all nodes in $A$, is maximized.
 
 The input format is as follows:
