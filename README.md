@@ -10,7 +10,7 @@ The input format is as follows:
 - The following $m$ lines are the $m$ edges in $G$. Each of the $m$ lines contains three integers $u_j,v_j,c_j$ (separated by spaces), which represents an edge from $u_j$ to $v_j$ with capacity $c_j$.
 The output of the program is the maximum total score $\sum_{v \in A} r_u$ (instead of the cut ($A$, $B$)).
 
-## Relevant Data Structures and Algorithms
+## Implementation
 I used the Ford-Fulkerson algorithm to find the maximum flow in the given flow network. The algorithm repeatedly finds an augmenting path from the source to the sink and adds its flow to the overall flow of the network. To find the augmenting path, the program uses the breadth-first search (BFS) algorithm, which finds the shortest path from the source to the sink in terms of the number of edges.
 
 To keep track of the flow in the network and to find the minimum cut, the program uses the residual graph. The residual graph is a modified version of the original graph, where each edge has a residual capacity. Initially, the residual capacity of each edge is equal to the capacity of the corresponding edge in the original graph. As the Ford-Fulkerson algorithm progresses, the residual capacity of each edge is updated to reflect the remaining capacity of the edge after the flow has been added.
@@ -20,6 +20,3 @@ To find the minimum cut in the residual graph, the program uses the depth-first 
 The program finds the nodes that are reachable from the source and the nodes that can reach the sink in the residual graph. Based on the reachable nodes, a project selection graph is created. This graph includes prerequisite edges and positive/negative edges based on scores assigned to the nodes. The **Project Selection** algorithm also uses FF find the maximum flow from the project source to the project sink, and thereby calculates the maximum score from the project selection by summing the scores of all nodes reachable from the project source.
 
 The maximum total score is calculated by considering the reachable nodes from the source but not the sink, and summing their scores.
-
-## Takeaways
-This assignment explores implementations of network flow algorithms and graph traversal algorithms. These concepts are essential for solving many real-world problems in fields such as operations research, computer networking, and machine learning.
